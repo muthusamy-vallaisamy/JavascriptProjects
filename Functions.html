@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function Example</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+        .console
+        {
+            width:70%;
+            float:left;
+            border: 2px solid black;
+            height: 600px;
+            overflow: scroll;
+        }
+
+        .sidebar
+        {
+            display: flex;
+            width:28%;
+            float:right;
+            border: 2px solid rebeccapurple;
+            padding: 10px;
+            align-content: center;
+            flex-direction: column;
+            height: 600px;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Function</h1>
+            <div id="console" class="console">
+
+            </div>
+            <aside class="sidebar">
+                <button class="btn btn-primary mb-3" onclick="normalFunction()">Normal Function</button>
+                <button class="btn btn-primary mb-3" onclick="functionExpression()">Function Expression</button>
+                <button class="btn btn-primary mb-3" onclick="closureFunction()">Closure Functions 1</button>
+                <button class="btn btn-primary mb-3" onclick="closureFunction1()">Closure Functions 2</button>
+                <button class="btn btn-primary mb-3" onclick="arrowFunction()">Arrow Function</button>
+                <button class="btn btn-primary mb-3" onclick="arrowFunctionMessage('Srinath Muthusamy')">Arrow Function 1</button>
+                <button class="btn btn-primary mb-3" onclick="arrowFunctionThis()">Arrow Function 2</button>
+                <button class="btn btn-primary mb-3" onclick="functionScope1()">Function Scope1</button>
+                
+                
+            </aside>
+        </div>
+    </div>
+    <script src="Scripts/function.js">
+    </script>
+</body>
+</html>

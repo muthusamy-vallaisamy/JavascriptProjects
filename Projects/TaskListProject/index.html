@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "Georgia, 'Times New Roman', Times, serif";
+      font-size: 1.2rem;
+    }
+
+    .container {
+      width: 600px;
+      height: 700px;
+      margin: 50px auto;
+      border: 1px solid green;
+    }
+
+    .collection {
+      list-style: none;
+      padding: 10px;
+      margin-top: 20px
+    }
+
+    .collection-item {
+      padding: 5px;
+      margin: 2px;
+      border: 1px solid rebeccapurple;
+      border-radius: 3px;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-lable {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+
+    }
+
+    .form-button {
+      width: 200px;
+      border-radius: 3px;
+      margin-left: 10px;
+      font-size: 1.3rem;
+
+    }
+
+    .form-text {
+      padding: 3px;
+      font-size: 1.3rem;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .float-right {
+      float: right;
+      padding-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="center-text form-h1">Todo Tasks</h1>
+    <div class="form">
+      <form id="frmTask">
+        <p class="form-lable">Enter a new task</p>
+        <input type="text" class="form-text" id="txtTask" placeholder="Please enter new task">
+        <button type="submit" class="form-button" aria-placeholder="Enter new task">Add Task</button>
+      </form>
+    </div>
+    <hr>
+
+    <div class="form">
+      <form id="frmSearch">
+        <input type="text" class="form-text" id="txtSearch">
+      </form>
+    </div>
+    <div>
+      <ul class="collection" id="taskList">
+      </ul>
+    </div>
+    <button type="button" id="btnClearList" class="form-button">Clear All Tasks</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
